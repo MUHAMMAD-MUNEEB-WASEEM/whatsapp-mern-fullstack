@@ -1,0 +1,5 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    flex: 0.35; /*sidebar takes 35% of screen*/
+}

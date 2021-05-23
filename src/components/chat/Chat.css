@@ -1,0 +1,5 @@
+.chat{
+    display: flex;
+    flex-direction: column;
+    flex: 0.65; /*chat takes 65% of screen*/
+}
