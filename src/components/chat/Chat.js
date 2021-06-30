@@ -3,7 +3,8 @@ import { AttachFile, InsertEmoticon, MicNone, MoreVert, SearchOutlined } from '@
 import React from 'react'
 import './Chat.css'
 
-function Chat() {
+function Chat({messages}) {
+    console.log(messages)
 
     const sendMessage = () => {
 
@@ -31,34 +32,17 @@ function Chat() {
             </div>
 
             <div className="chat__body">
-
-                 <p className="chat__message">
-                     <span className="chat__name">Muneeb</span>
-                     
-                     This is a message
-                     
-                     <span className="chat__timestamp">
-                         {new Date().toUTCString()}
-                     </span>
-                </p>
-                <p className="chat__message chat__reciever">
-                     <span className="chat__name">Muneeb</span>
-                     
-                     This is a message
-                     
-                     <span className="chat__timestamp">
-                         {new Date().toUTCString()}
-                     </span>
-                </p>
-                <p className="chat__message">
-                     <span className="chat__name">Muneeb</span>
-                     
-                     This is a message
-                     
-                     <span className="chat__timestamp">
-                         {new Date().toUTCString()}
-                     </span>
-                </p>
+                {messages.map((message) =>(
+                    <p className={`chat__message ${message.recieved && "chat__reciever"}`}>
+                        <span className="chat__name">{message.name}</span>
+                        
+                        {message.message}
+                        
+                        <span className="chat__timestamp">
+                            {message.timestamp }
+                        </span>
+                    </p>
+                ))}
 
             </div>
 
