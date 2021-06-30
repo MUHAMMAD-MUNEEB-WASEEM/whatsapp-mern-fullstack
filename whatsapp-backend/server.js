@@ -19,6 +19,17 @@ const pusher = new Pusher({
 //middleware
 app.use(express.json()) //To convert string to json
 
+app.use((req, res, next)=>{
+
+    //headers for heruko
+    //As access from anywhere, so no security in it
+    res.setHeader("Access-Control-Allow-Origin", "*"); //req from any end point
+    res.setHeader("Access-Control-Allow-Headers", "*"); //accept headers from everywhere
+    next();
+})
+
+
+
 //DB config
 const connection_url = 'mongodb+srv://admin:WrKNg2Jfc5vUkVLw@cluster0.kgp7k.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 
