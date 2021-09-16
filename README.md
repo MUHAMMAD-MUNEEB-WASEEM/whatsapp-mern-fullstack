@@ -6,6 +6,15 @@ https://whatsapp-mern-fullstack.web.app/
 
 https://github.com/MUHAMMAD-MUNEEB-WASEEM/whatsapp-backend
 
+## Backend Heroku Deploy Link
+
+https://updated-whatsapp-mern.herokuapp.com/
+
+## Apis
+
+* Post Api (https://updated-whatsapp-mern.herokuapp.com/messages/sync)
+* Get Api  (https://updated-whatsapp-mern.herokuapp.com/messages/sync)
+
 ## About App
 
 It is a messaging app whose UI is inspired from whatsapp. The database used is mongodb along with express server. In short, it a complete MERN app
