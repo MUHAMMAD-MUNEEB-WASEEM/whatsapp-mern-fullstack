@@ -1,6 +1,18 @@
-# Getting Started with Create React App
+## Firebase Deploy Link
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://whatsapp-mern-fullstack.web.app/
+
+## Backend Repo Link
+
+https://github.com/MUHAMMAD-MUNEEB-WASEEM/whatsapp-backend
+
+## About App
+
+It is a messaging app whose UI is inspired from whatsapp. The database used is mongodb along with express server. In short, it a complete MERN app
+
+## Real time
+
+Pusher is used for real time functionality 
 
 ## Available Scripts
 
